@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian-Painting</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            height:  748px;
+            width: 748px;
+            grid-template-columns: 320px 198px 153px 50px ;
+            grid-template-rows: 414px 130px 155px 22px;
+            gap: 9px ;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: #000;
+        }
+        
+        .container > div {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .a {
+            background-color:  #E72F24;
+        }
+        .b {
+            background-color: #F0F1EC;
+            grid-column: span 3 ;
+        }
+        .c {
+            background-color: #F0F1EC;
+            grid-row: span 2;
+        }
+        .d {
+            background-color: #F0F1EC;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .e {
+            background-color:  #004592;
+        }
+        .f {
+            background-color: #F0F1EC;
+            grid-area: 4 / 1 / 5 / 2;
+        }
+        .g {
+            background-color: #f9d01e;
+            grid-area: 4 / 2 / 5 / 3;
+        }
+        .h {
+            background-color: #232629;
+            grid-area: 4 / 3 / 5 / 4;
+        }
+        .i {
+            background-color: #F0F1EC;
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+        <div class="i"></div>
+    </div>
+</body>
+</html>
